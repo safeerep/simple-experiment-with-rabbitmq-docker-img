@@ -1,0 +1,19 @@
+version: '3'
+services:
+  auth:
+    build:
+      context: ./auth
+    ports:
+      - "3001:3001"
+
+  order:
+    build:
+      context: ./order
+    ports:
+      - "3002:3002"
+
+  product:
+    build:
+      context: ./product
+    ports:
+      - "3003:3003"
